@@ -6,7 +6,7 @@ using namespace sf;
 //Setting Size of SFML Windows
 float window_x = 1000, window_y = 650;
 //Creating SFML Windows
-RenderWindow window(VideoMode(window_x, window_y), "BST AVL Representer", Style::Default | Style::Resize);
+RenderWindow window(VideoMode(window_x, window_y), "BST AVL Representer");
 /////////////////////////////////
 //------------>> Objects of Fonts......
 Font TimesNewRoman;
@@ -924,7 +924,7 @@ void MainMenu()
 }
 int main()
 {
-	TimesNewRoman.loadFromFile("Fonts/TimesNewRoman.ttf");
+	TimesNewRoman.loadFromFile("Fonts/Agdasima.ttf");
 	while (window.isOpen())
 	{
 		Event evnt;
