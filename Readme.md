@@ -1,72 +1,63 @@
-# School Management System
+# BST and AVL Tree Visualization
 
-## Introduction:
-The School Management System is a comprehensive software application developed using SFML and C++. It aims to streamline administrative tasks
-and enhance communication between administrators, teachers, and students. The system provides an efficient platform for managing teacher and 
-student data, automating routine processes, and facilitating information sharing.
+The BST and AVL Tree Visualization is a C++ program that utilizes the SFML library and object-oriented programming (OOP) to represent and visualize Binary Search Trees (BST) and AVL Trees. The program allows users to interactively input values, insert them into the trees, and observe the tree structure and rotations in real-time.
 
-![Screenshot](./Screenshots/1.png)
+## Features
 
-## Main Menu:
-The School Management System features a secure and intuitive interface that begins with a main menu, prompting users to enter their login credentials, including username and password. Once authenticated, users are directed to their respective modules based on their assigned roles: admin, teacher, or student.
+- BST and AVL tree visualization: The program visually represents the structure of BST and AVL trees using graphical elements.
+- Interactive input and insertion: Users can input values and insert them into the trees using a user-friendly interface.
+- Real-time tree updates: The program updates the tree structure in real-time after each insertion, allowing users to observe the changes visually.
+- Rotation visualization: If an AVL tree becomes imbalanced after an insertion, the program marks the imbalance nodes and shows the rotations required to rebalance the tree.
+- Search functionality: Users can search for specific values in both BST and AVL trees.
+- Deletion functionality: Users can remove nodes from the trees, and the program updates the tree structure accordingly.
 
-![Screenshot](./Screenshots/2.png)
+## Getting Started
 
-## Admin:
-The admin, as the system administrator, has access to a range of features within the School Management System. The admin interface consists of 
-two main tabs: "Teacher" and "Student."
+To run the BST and AVL Tree Visualization program, follow these steps:
 
-![Screenshot](./Screenshots/3.png)
+1. Clone the repository or download the source code files.
+2. Install the SFML library. Refer to the official SFML documentation for installation instructions: [SFML Installation Guide](https://www.sfml-dev.org/download.php)
+3. Open the terminal and navigate to the project directory.
+4. Compile the source code using a C++ compiler and link with the SFML library:
+```sh
+g++ main.cpp -o bst_avl_visualization -lsfml-graphics -lsfml-window -lsfml-system
+```
+5. Run the program:
+```sh
+./bst_avl_visualization
+```
+6. Follow the on-screen instructions to interact with the program, insert values, search, and delete nodes in the BST and AVL trees.
 
-### Teacher Tab:
-- Hire: 
-The admin can add new teachers to the system by providing necessary details.
-- Edit: 
-The admin can update teacher records. The system displays all the teacher data, and the admin can search for a specific teacher and make modifications.
-- Details: 
-The admin can view detailed information about any teacher by searching using their ID.
+## Dependencies
 
-### Student Tab:
-- Enroll: 
-The admin can add new students to the system by entering the required information.
-- Edit: 
-The admin can update student records. All student data is displayed, and the admin can search for a specific student and make necessary changes.
-- Details: 
-The admin can view detailed information about any student by searching using their ID.
+The BST and AVL Tree Visualization program has the following dependencies:
 
-## Teacher:
-Teachers have access to a dedicated interface within the School Management System. The teacher interface provides convenient access to important 
-functionalities.
+- SFML library: Required for graphical visualization of the trees. Make sure to install the SFML library before compiling the program.
 
-![Screenshot](./Screenshots/4.png)
+## Customization
 
-- Time Table:
-This feature allows teachers to view their personalized time table, which displays their teaching schedule. This helps teachers stay organized and manage their classes efficiently.
+The program can be customized to fit specific requirements. Here are a few customization suggestions:
 
-![Screenshot](./Screenshots/5.png)
+- Modify graphical elements: Explore the code in `Source.cpp` to customize the visual representation of the trees, such as node shapes, colors, and animations.
+- Adjust insertion speed: In `Source.cpp`, you can change the delay between tree updates to control the speed at which the trees are visualized.
+- Add additional functionality: Extend the program by implementing additional tree operations or visualizations.
 
-- Assign Marks:
-This feature enables teachers to assign marks to all the students enrolled in the specific course they are teaching. It simplifies the grading process and ensures accurate record-keeping.
+Feel free to explore the codebase and experiment with different customizations to suit your needs.
 
-- Assign Grades:
-This feature allows teachers to assign grades to all the students enrolled in a specific course. This feature assists in generating student progress reports and evaluating academic performance.
+## Contributing
 
-- Assign Attendance:
-this feature enables teachers to assign attendance to all the students enrolled in a specific course. It helps maintain accurate records of student attendance and monitor class participation.
+Contributions to the BST and AVL Tree Visualization project are welcome! If you have any ideas, bug fixes, or enhancements, please open an issue or submit a pull request on the project's GitHub repository.
 
-## Student:
-Students also have their own dedicated interface within the School Management System, offering access to essential features.
+Please adhere to the code style and structure of the existing project when making contributions. Include clear commit messages and provide a detailed explanation of your changes.
 
-![Screenshot](./Screenshots/6.png)
+## License
 
-- Attendance:
-This feature allows students to view their attendance records, providing information about their presence in various courses. This helps students track their attendance and ensures they meet the required attendance criteria.
+The BST and AVL Tree Visualization program is open-source and released under the [MIT License](LICENSE). See the `LICENSE` file for more details.
 
-- Marks:
-This feature enables students to view their marks in different assignments, tests, or exams for the courses they are enrolled in. This feature allows students to monitor their academic performance and track their progress.
+## Contact
 
-- Grades:
-This feature allows students to view their assigned grades for the courses they are enrolled in. This feature provides valuable feedback on their academic achievements and helps them understand their overall performance.
+If you have any questions or suggestions regarding the BST and AVL Tree Visualization program, please contact [m.muneeb.ur.rehman.2000@gmail.com](mailto:m.muneeb.ur.rehman.2000@gmail.com). We appreciate your feedback!
 
-## Conclusion:
-The School Management System is a powerful software application developed using SFML and C++ to facilitate efficient management of teacher and student data. By automating administrative tasks, providing communication channels, and offering essential features for teachers and students, the system aims to enhance productivity and improve overall operational efficiency within the school environment. With its user-friendly interface and comprehensive functionalities, the School Management System brings convenience, accuracy, and effective information management to administrators, teachers, and students alike.
+---
+
+Thank you for using the BST and AVL Tree Visualization program! We hope it helps you understand and visualize the behavior of Binary Search Trees (BST) and AVL Trees effectively. Happy tree visualization!
